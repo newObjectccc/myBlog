@@ -14,3 +14,23 @@ a {
 * {
   box-sizing: border-box;
 }
+
+*::-webkit-scrollbar {
+  width: 6px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #e6e6e6 !important;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: #585865 !important;
+  border-radius: 1px !important;
+}
+
+* {
+  transition-property: color,background,box-shadow,border-color;
+  transition-delay: 0s,0s,0s,0s;
+  transition-duration: .2s,.2s,.2s,.2s;
+  transition-timing-function: ease,ease,ease,ease;
+}

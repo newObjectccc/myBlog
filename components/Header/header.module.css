@@ -1,0 +1,23 @@
+.header {
+  width: 100%;
+  padding: 0.5vw;
+  box-shadow: 2px 2px 5px rgb(0 0 0 / 20%);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+
+.author {
+  width: 100%;
+  height: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2vw;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #484853;
+}
+
+
