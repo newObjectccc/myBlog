@@ -13,12 +13,12 @@ const Layout = (props) => {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Blog ccdd</title>
+        <title>Jacky.ccdd's Blog</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header></Header>
       <div className={styles.bg}>
-        金色的林荫道，丹红色的枫叶尖，丹红色的落霞，选择一幅画卷，一生走在画卷之中。
+        金色的林荫道，丹红色的枫叶尖，丹红色的落霞，爱是脑海中的一幅画，守护一生即是长情。
         <div className={styles.iconWrap}>
           <GithubFilled />
           <WechatFilled />

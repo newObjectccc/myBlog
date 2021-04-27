@@ -11,6 +11,11 @@
   font-size: 1.25vw;
   font-weight: 600;
   color: #50505c;
+  cursor: pointer;
+}
+
+.title:hover {
+  color: #06c;
 }
 
 .content {
@@ -27,13 +32,23 @@
   overflow: hidden;
 }
 
-/* .content::after{content: "..."; position: absolute; bottom: 0; right: 0; padding-left: 40px;
-  background: -webkit-linear-gradient(left, transparent, #fff 55%);
-  background: -o-linear-gradient(right, transparent, #fff 55%);
-  background: -moz-linear-gradient(right, transparent, #fff 55%);
-  background: linear-gradient(to right, transparent, #fff 55%);
-} */
-
 .infoWrap {
   color: #808091;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.infoWrap span {
+  margin-right: 8px;
+}
+
+.posiMore {
+  position: absolute;
+  right: 0;
+  cursor: pointer;
+}
+
+.posiMore:hover {
+  color: #06c;
 }
