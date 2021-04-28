@@ -4,6 +4,10 @@ import {
   DatabaseFilled,
   TagFilled
 } from '@ant-design/icons'
+import dayjs from 'dayjs'
+
+const relativeTime = require('dayjs/plugin/relativeTime');
+dayjs.extend(relativeTime);
 
 const ArticleItem = (props) => {
   return (
@@ -12,7 +16,7 @@ const ArticleItem = (props) => {
       <div className={articleItemStyles.content}>{props.dataSource.content}</div>
       <div className={articleItemStyles.infoWrap}>
         <ClockCircleFilled />
-        <span>1 years ago</span>
+        <span>{dayjs(props.dataSource.createTime).fromNow()}</span>
         <DatabaseFilled />
         <span>{props.dataSource.categories}</span>
         <TagFilled />

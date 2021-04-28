@@ -6,6 +6,10 @@
   top: 0;
   left: 0;
   z-index: 999;
+  transition-property: transform;
+  transition-delay: 0s;
+  transition-duration: .3s;
+  transition-timing-function: ease-out;
 }
 
 .author {
@@ -20,4 +24,20 @@
   color: #484853;
 }
 
+.hide {
+  transform: translateY(-105%);
+}
 
+.backTop {
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  border-radius: 4px;
+  background-color: #1088e9;
+  color: #fff;
+  text-align: center;
+  font-size: 14px;
+  position: fixed;
+  right: 6vw;
+  bottom: 6vw;
+}
