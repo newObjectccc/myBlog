@@ -3,7 +3,7 @@ import Head from 'next/head'
 import { useRouter } from 'next/router'
 import Header from '../Header'
 import { Col, Row } from 'antd'
-import styles from '../../styles/layout.module.css'
+import styles from './layout.module.css'
 import {
   GithubFilled,
   WechatFilled,
@@ -21,7 +21,7 @@ const Layout = (props) => {
         <title>Jacky.ccdd's Blog</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Header></Header>
+      <Header />
       {
         curRouter.indexOf('/doc') === -1
         &&
@@ -36,7 +36,7 @@ const Layout = (props) => {
       }
       <div className={styles.mainContent}>
         <Row type="flex" justify="center">
-          <Col span={12}>
+          <Col span={15}>
             {props.children}
           </Col>
         </Row>
