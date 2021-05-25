@@ -1,5 +1,5 @@
 .container {
-  width: 100%;
+  /* width: 100%;
   min-height: 100vh;
   margin: 40px 0;
   padding: 30px;
@@ -7,11 +7,11 @@
   box-sizing: border-box;
   background: #fff;
   margin-bottom: 30px;
-  box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.2); */
 }
 
 .container:hover {
-  box-shadow: 2px 2px 12px rgba(0,0,0,0.2);
+  /* box-shadow: 2px 2px 12px rgba(0,0,0,0.2); */
 }
 
 .itemWrap {

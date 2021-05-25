@@ -1,10 +1,15 @@
-const ReactMarkdown = require('react-markdown')
+import React from 'react'
+import ReactMarkdown from 'react-markdown'
 
-const input = '# This is a header\n\nAnd this is a paragraph'
+let input = '# This is a header\n\nAnd this is a paragraph'
 
-const ArticleDetail = () => {
+const ArticleDetail = ({docId}) => {
   return (
-    <ReactMarkdown source={input} />
+    <>
+      <ReactMarkdown>
+        {input + docId}
+      </ReactMarkdown>
+    </>
   )
 }
 

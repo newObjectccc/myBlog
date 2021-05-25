@@ -8,9 +8,8 @@ const Header = () => {
   const menuStylesObj = {
     textAlign: 'right',
     border: 'none',
-    fontSize: '1vw',
+    fontSize: '.9vw',
     color: '#50505c',
-    letterSpacing: '1px',
     background: 'rgba(0,0,0,0)'
   }
 
@@ -40,13 +39,15 @@ const Header = () => {
       <div className={`${headerStyles.header} ${scrollOffset>=clientHeight&&headerStyles.hide}`}>
         <Row type="flex" justify="center">
           <Col span={5} className={headerStyles.author}>
-            Jacky ccdd's Blog
+            <img className={headerStyles.avatar} src="./avatar.png"></img>
+            ccdd's Blog
           </Col>
 
           <Col span={7}>
             <Menu 
-              defaultSelectedKeys={[currentRouter]} 
+              // defaultSelectedKeys={[currentRouter]} 
               mode="horizontal" 
+              selectedKeys={[currentRouter]}
               style={menuStylesObj}
             >
               <Menu.Item key="/">

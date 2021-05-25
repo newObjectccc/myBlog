@@ -18,7 +18,7 @@ const Layout = (props) => {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Jacky.ccdd's Blog</title>
+        <title>ccdd's Blog</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
@@ -36,8 +36,10 @@ const Layout = (props) => {
       }
       <div className={styles.mainContent}>
         <Row type="flex" justify="center">
-          <Col span={15}>
-            {props.children}
+          <Col span={12}>
+            <div className={styles.routerView}>
+              {props.children}
+            </div>
           </Col>
         </Row>
       </div>

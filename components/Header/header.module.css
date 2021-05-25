@@ -16,12 +16,19 @@
   width: 100%;
   height: inherit;
   display: flex;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
-  font-size: 2vw;
+  font-size: 1.8vw;
   font-weight: 700;
   letter-spacing: 1px;
   color: #484853;
+}
+
+.avatar {
+  border-radius: 6px;
+  width: 2.7vw;
+  height: 2.7vw;
+  margin-right: 10px;
 }
 
 .hide {
