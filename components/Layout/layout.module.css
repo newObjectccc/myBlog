@@ -27,6 +27,9 @@
   position: absolute;
   bottom: 2vw;
 }
+.iconWrap > span {
+  cursor: pointer;
+}
 
 .iconWrap span {
   margin: 0 1vw;
