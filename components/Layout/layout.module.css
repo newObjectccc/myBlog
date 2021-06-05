@@ -48,11 +48,11 @@
   box-sizing: border-box;
   background: #fff;
   margin-bottom: 30px;
-  box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .routerView:hover {
-  box-shadow: 2px 2px 12px rgba(0,0,0,0.2);
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
 }
 
 .footer {

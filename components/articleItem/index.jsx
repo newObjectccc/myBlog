@@ -1,13 +1,10 @@
-import articleItemStyles from './articleItem.module.css'
-import {
-  ClockCircleFilled,
-  DatabaseFilled,
-  TagFilled
-} from '@ant-design/icons'
+import { ClockCircleFilled, DatabaseFilled, TagFilled } from '@ant-design/icons'
 import dayjs from 'dayjs'
+import articleItemStyles from './articleItem.module.css'
 
-const relativeTime = require('dayjs/plugin/relativeTime');
-dayjs.extend(relativeTime);
+const relativeTime = require('dayjs/plugin/relativeTime')
+
+dayjs.extend(relativeTime)
 
 const ArticleItem = (props) => {
   return (
@@ -21,13 +18,12 @@ const ArticleItem = (props) => {
         <span>{props.dataSource.categories}</span>
         <TagFilled />
         <span>
-          {
-            props.dataSource.tags.map((item,index) => index+1!==props.dataSource.tags.length ? `${item} | ` : `${item}`)
-          }
+          {props.dataSource.tags.map((item, index) =>
+            index + 1 !== props.dataSource.tags.length ? `${item} | ` : `${item}`
+          )}
         </span>
         <div className={articleItemStyles.posiMore}>Read more</div>
       </div>
-      
     </div>
   )
 }

@@ -3,12 +3,10 @@ import ReactMarkdown from 'react-markdown'
 
 let input = '# This is a header\n\nAnd this is a paragraph'
 
-const ArticleDetail = ({docId}) => {
+const ArticleDetail = ({ docId }) => {
   return (
     <>
-      <ReactMarkdown>
-        {input + docId}
-      </ReactMarkdown>
+      <ReactMarkdown>{input + docId}</ReactMarkdown>
     </>
   )
 }

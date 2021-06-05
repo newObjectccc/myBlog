@@ -11,7 +11,9 @@ a {
 
 * {
   box-sizing: border-box;
-  font-family: Optima-Regular,Optima,-apple-system,system-ui,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif,BlinkMacSystemFont,Helvetica Neue,PingFang SC,Hiragino Sans GB,Microsoft YaHei,Arial;
+  font-family: Optima-Regular, Optima, -apple-system, system-ui, Segoe UI, Roboto, Ubuntu, Cantarell,
+    Noto Sans, sans-serif, BlinkMacSystemFont, Helvetica Neue, PingFang SC, Hiragino Sans GB,
+    Microsoft YaHei, Arial;
 }
 
 *::-webkit-scrollbar {
@@ -28,8 +30,8 @@ a {
 }
 
 * {
-  transition-property: color,background,box-shadow,border-color;
-  transition-delay: 0s,0s,0s,0s;
-  transition-duration: .2s,.2s,.2s,.2s;
-  transition-timing-function: ease,ease,ease,ease;
+  transition-property: color, background, box-shadow, border-color;
+  transition-delay: 0s, 0s, 0s, 0s;
+  transition-duration: 0.2s, 0.2s, 0.2s, 0.2s;
+  transition-timing-function: ease, ease, ease, ease;
 }

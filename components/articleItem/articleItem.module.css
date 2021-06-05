@@ -4,11 +4,11 @@
   box-sizing: border-box;
   background: #fff;
   margin-bottom: 38px;
-  box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .container:hover {
-  box-shadow: 2px 2px 12px rgba(0,0,0,0.2);
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
 }
 
 .title {
@@ -23,9 +23,9 @@
 }
 
 .content {
-  font-size: .9vw;
+  font-size: 0.9vw;
   line-height: 2;
-  margin: .9vw 0;
+  margin: 0.9vw 0;
   word-wrap: break-word;
   text-align: justify;
   color: #9c9ca3;

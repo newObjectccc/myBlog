@@ -8,7 +8,7 @@
   z-index: 999;
   transition-property: transform;
   transition-delay: 0s;
-  transition-duration: .3s;
+  transition-duration: 0.3s;
   transition-timing-function: ease-out;
 }
 

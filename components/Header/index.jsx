@@ -1,8 +1,8 @@
-import React, {useEffect, useState} from 'react'
-import headerStyles from './header.module.css'
-import {Row, Col, Menu, BackTop} from 'antd'
+import React, { useEffect, useState } from 'react'
+import { Row, Col, Menu, BackTop } from 'antd'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
+import headerStyles from './header.module.css'
 
 const Header = () => {
   const menuStylesObj = {
@@ -13,9 +13,9 @@ const Header = () => {
     background: 'rgba(0,0,0,0)'
   }
 
-  const [scrollOffset, setScrollOffset] = useState(0);
-  const [clientHeight, setClientHeight] = useState(0);
-  const currentRouter = useRouter().pathname;
+  const [scrollOffset, setScrollOffset] = useState(0)
+  const [clientHeight, setClientHeight] = useState(0)
+  const currentRouter = useRouter().pathname
 
   useEffect(() => {
     setClientHeight(window.innerHeight)
@@ -25,28 +25,29 @@ const Header = () => {
     const responsiveClientHeightHandler = () => {
       setClientHeight(window.innerHeight)
     }
-    window.addEventListener('scroll', scrollHandler);
+    window.addEventListener('scroll', scrollHandler)
     window.addEventListener('resize', responsiveClientHeightHandler)
     return () => {
-      window.removeEventListener('scroll', scrollHandler);
-      window.removeEventListener('resize', responsiveClientHeightHandler);
+      window.removeEventListener('scroll', scrollHandler)
+      window.removeEventListener('resize', responsiveClientHeightHandler)
     }
   }, [])
 
-
   return (
     <>
-      <div className={`${headerStyles.header} ${scrollOffset>=clientHeight&&headerStyles.hide}`}>
+      <div
+        className={`${headerStyles.header} ${scrollOffset >= clientHeight && headerStyles.hide}`}
+      >
         <Row type="flex" justify="center">
           <Col span={5} className={headerStyles.author}>
-            <img className={headerStyles.avatar} src="./avatar.png"></img>
+            <img className={headerStyles.avatar} src="./avatar.png" />
             ccdd's Blog
           </Col>
 
           <Col span={7}>
-            <Menu 
-              // defaultSelectedKeys={[currentRouter]} 
-              mode="horizontal" 
+            <Menu
+              // defaultSelectedKeys={[currentRouter]}
+              mode="horizontal"
               selectedKeys={[currentRouter]}
               style={menuStylesObj}
             >
