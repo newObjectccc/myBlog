@@ -3,17 +3,6 @@ import ReactMarkdown from 'react-markdown'
 import CodeBlock from '../codeBlock'
 import MdNavBar from '../mdNavBar'
 
-let input = `# This is a header\n\nAnd this is a paragraph, Here is some JavaScript code:
-~~~js
-function mark() {
-  [1,2,3].map(item => {
-    console.log('mark success!', item)
-  })
-  return <ReactMarkDown />
-}
-console.log('It works!')
-~~~`
-
 const components = {
   code({ node, inline, className, children, ...props }) {
     const match = /language-(\w+)/.exec(className || '')
@@ -30,12 +19,12 @@ const components = {
   }
 }
 
-const ArticleDetail = ({ docId }) => {
+const ArticleDetail = ({ docId, docSource }) => {
   return (
     <>
       {docId}
-      <MdNavBar articleDetail={input}></MdNavBar>
-      <ReactMarkdown children={input} components={components}></ReactMarkdown>
+      <MdNavBar articleDetail={docSource}></MdNavBar>
+      <ReactMarkdown children={docSource} components={components}></ReactMarkdown>
     </>
   )
 }
