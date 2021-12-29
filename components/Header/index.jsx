@@ -43,7 +43,6 @@ const Header = () => {
             <img className={headerStyles.avatar} src="./avatar.png" />
             ccdd's Blog
           </Col>
-
           <Col span={7}>
             <Menu
               // defaultSelectedKeys={[currentRouter]}
